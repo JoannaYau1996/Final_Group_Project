@@ -55,7 +55,10 @@ function NavScrollExample() {
             >
               Home
             </Link>
-            <Link className="text-light mx-5 my-2 my-md-0 text-decoration-none">
+            <Link
+              to="/post"
+              className="text-light mx-5 my-2 my-md-0 text-decoration-none"
+            >
               Posts
             </Link>
             <Link

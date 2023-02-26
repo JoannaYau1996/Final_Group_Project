@@ -9,6 +9,7 @@ import Register from "./Components/Register";
 
 import NavScrollExample from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Postpage from "./Page/Post/Postpage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +22,7 @@ root.render(
         <Route path="/games" element={<Games />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/post" element={<Postpage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
