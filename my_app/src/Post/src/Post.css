@@ -7,32 +7,23 @@
   color: #fafafa;
 }
 
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.navbar h1 {
+/* .navbar h1 {
   color: #04b616;
-}
+} */
 
 .navbar .links {
   margin-left: auto;
 }
 
-.navbar a {
+/* .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
-}
+} */
 
-.navbar a:hover {
+/* .navbar a:hover {
   color: #04b616;
-}
+} */
 
 .content {
   max-width: 600px;
@@ -131,4 +122,5 @@ hr {
 
 .artcontent {
   color: #fafafa;
+  text-align: center;
 }
