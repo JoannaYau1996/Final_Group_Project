@@ -24,6 +24,7 @@
   border-radius: 3px;
   color: #000;
   font-weight: bold;
+  transition: all 0.25s ease;
 }
 
 #contactbtn:hover {
