@@ -4,6 +4,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
+  color: #fafafa;
 }
 
 .navbar {
@@ -107,6 +108,7 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  color: #333;
 }
 
 .create button {
