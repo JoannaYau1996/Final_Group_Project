@@ -31,10 +31,10 @@ function BasicExample() {
               <Card.Text className="d4d4 fw-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 eget metus faucibus, porttitor eros in, porta ...
-                <p className="mt-3 fs-6 fw-bold text-light">
-                  BY Joanna@Yau 23/02/2023
-                </p>
               </Card.Text>
+              <p className="mt-3 fs-6 fw-bold text-light">
+                BY Joanna@Yau 23/02/2023
+              </p>
             </Card.Body>
           </Card>
         </div>
@@ -57,10 +57,10 @@ function BasicExample() {
               <Card.Text className="d4d4 fw-light">
                 Lorem ipsum dolor sit amet, consectetur faucibus, porttitor eros
                 in, porta ...
-                <p className="mt-3 fs-6 fw-bold text-light">
-                  BY Kevin 19/02/2023
-                </p>
               </Card.Text>
+              <p className="mt-3 fs-6 fw-bold text-light">
+                BY Kevin 19/02/2023
+              </p>
             </Card.Body>
           </Card>
         </div>
@@ -83,10 +83,10 @@ function BasicExample() {
               <Card.Text className="d4d4 fw-light">
                 Lorem ipsum dolor sit amet, consectetur faucibus, porttitor eros
                 in, porta ...
-                <p className="mt-3 fs-6 fw-bold text-light">
-                  BY Stephanie 19/02/2023
-                </p>
               </Card.Text>
+              <p className="mt-3 fs-6 fw-bold text-light">
+                BY Stephanie 19/02/2023
+              </p>
             </Card.Body>
           </Card>
         </div>
@@ -109,10 +109,10 @@ function BasicExample() {
               <Card.Text className="d4d4 fw-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 eget metus faucibus, porttitor eros in, porta ...
-                <p className="mt-3 fs-6 fw-bold text-light">
-                  BY Joanna@Yau 18/02/202
-                </p>
               </Card.Text>
+              <p className="mt-3 fs-6 fw-bold text-light">
+                BY Joanna@Yau 18/02/202
+              </p>
             </Card.Body>
           </Card>
         </div>
@@ -135,10 +135,10 @@ function BasicExample() {
               <Card.Text className="d4d4 fw-light">
                 faucibus, porttitor eros in, porta faucibus, porttitor eros in,
                 porta...
-                <p className="mt-3 fs-6 fw-bold text-light">
-                  BY Kevin 16/02/2023
-                </p>
               </Card.Text>
+              <p className="mt-3 fs-6 fw-bold text-light">
+                BY Kevin 16/02/2023
+              </p>
             </Card.Body>
           </Card>
         </div>
@@ -161,10 +161,10 @@ function BasicExample() {
               <Card.Text className="d4d4 fw-light">
                 Lorem ipsum dolor sit amet, consectetur faucibus, porttitor eros
                 in, porta ...
-                <p className="mt-3 fs-6 fw-bold text-light">
-                  BY Stephanie 13/02/2023
-                </p>
               </Card.Text>
+              <p className="mt-3 fs-6 fw-bold text-light">
+                BY Stephanie 13/02/2023
+              </p>
             </Card.Body>
           </Card>
         </div>
