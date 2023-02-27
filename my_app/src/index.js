@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Post from "./Post/src/Post";
 import Create from "./Post/src/Create";
 import BlogDetails from "./Post/src/PostDetails";
+import Test from "./Components/Test";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,6 +29,7 @@ root.render(
         <Route path="/post" element={<Post />} />
         <Route path="/create" element={<Create />} />
         <Route path="/blogs/:id" element={<BlogDetails />} />
+        <Route path="/blogs/:id" element={<Test />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
