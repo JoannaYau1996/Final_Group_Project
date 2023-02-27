@@ -9,9 +9,9 @@ import Register from "./Components/Register";
 
 import NavScrollExample from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Postpage from "./Page/Post/Postpage";
-import Create from "./Page/Post/Create";
-import BlogDetails from "./Page/Post/BlogDetails";
+import Post from "./Post/src/Post";
+import Create from "./Post/src/Create";
+import BlogDetails from "./Post/src/PostDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,9 +25,9 @@ root.render(
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         {/* post */}
-        <Route path="/post" element={<Postpage />} />
+        <Route path="/post" element={<Post />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/post/:id" element={<BlogDetails />} />
+        <Route path="/blogs/:id" element={<BlogDetails />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

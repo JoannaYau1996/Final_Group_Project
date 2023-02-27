@@ -1,11 +1,11 @@
-import PostHome from "./PostHome";
+import Home from "./Home";
 import "./Post.css";
 
 const Postpage = () => {
   return (
     <div className="Postpage">
       <div className="content">
-        <PostHome />
+        <Home />
       </div>
     </div>
   );
