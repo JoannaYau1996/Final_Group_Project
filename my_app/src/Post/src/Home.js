@@ -14,19 +14,13 @@ const Home = () => {
     <div className="home">
       <Nav className="m-auto my-2 my-lg-0 text-center">
         <Link
-          to="/"
-          className="text-light mx-5 my-2 my-md-0 text-decoration-none"
-        >
-          Home
-        </Link>
-
-        <Link
           to="/create"
           className="text-light mx-5 my-2 my-md-0 text-decoration-none"
         >
           New Post
         </Link>
       </Nav>
+      <hr />
 
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}

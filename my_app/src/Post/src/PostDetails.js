@@ -8,13 +8,13 @@ const BlogDetails = () => {
     error,
     isPending,
   } = useFetch("http://localhost:8000/blogs/" + id);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const handleClick = () => {
     fetch("http://localhost:8000/blogs/" + blog.id, {
       method: "DELETE",
     }).then(() => {
-      history.push("/");
+      navigate("/post");
     });
   };
 
@@ -23,7 +23,7 @@ const BlogDetails = () => {
       {isPending && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {blog && (
-        <article>
+        <article className="artcontent">
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
           <div>{blog.body}</div>
