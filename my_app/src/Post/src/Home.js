@@ -1,30 +1,23 @@
-import BlogList from "./PostList";
+import PostList from "./PostList";
 import useFetch from "./useFetch";
-import { Link } from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
+import Loading from "./Loading";
 
 const Home = () => {
   const {
     error,
     isPending,
-    data: blogs,
-  } = useFetch("http://localhost:8000/blogs");
+    data: posts,
+  } = useFetch("http://localhost:8000/posts");
 
   return (
     <div className="home">
-      <Nav className="m-auto my-2 my-lg-0 text-center">
-        <Link
-          to="/create"
-          className="text-light mx-5 my-2 my-md-0 text-decoration-none"
-        >
-          New Post
-        </Link>
-      </Nav>
-      <hr />
-
       {error && <div>{error}</div>}
-      {isPending && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} />}
+      {isPending && (
+        <div>
+          <Loading />
+        </div>
+      )}
+      {posts && <PostList posts={posts} />}
     </div>
   );
 };

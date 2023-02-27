@@ -11,7 +11,7 @@ import NavScrollExample from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Post from "./Post/src/Post";
 import Create from "./Post/src/Create";
-import BlogDetails from "./Post/src/PostDetails";
+import PostDetails from "./Post/src/PostDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -27,7 +27,7 @@ root.render(
         {/* post */}
         <Route path="/post" element={<Post />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/blogs/:id" element={<BlogDetails />} />
+        <Route path="/posts/:id" element={<PostDetails />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

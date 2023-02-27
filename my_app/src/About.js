@@ -25,7 +25,7 @@ function About() {
   }
 
   return (
-    <div className="container-fluid ">
+    <div className="container-fluid px-5">
       <h1 className="d4d4 fw-bold text-center about-title mt-5 py-5 display-5 ">
         {"< About Us />"}
       </h1>
