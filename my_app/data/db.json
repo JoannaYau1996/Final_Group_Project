@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "title": "Best way to center a <div> on a page vertically and horizontally?",
+      "body": "Best way to center a <div> element on a page both vertically and horizontally?\n\n\nI know that margin-left: auto; margin-right: auto; will center on the horizontal, but what is the best way to do it vertically, too?\n",
+      "author": "Joanna",
+      "currentDate": "2/23/2023",
+      "id": 1
+    },
+    {
+      "title": "React display line breaks from saved textarea",
+      "body": "Using Facebook React. In a settings page, I have a multiline textarea where a user can enter multiline text (in my case, an address).\n\n<textarea value={address} />\n\nWhen I try to display the address, so something like {address}, it doesn't show the line breaks and is all on one line.\n\n<p>{address}</p>\n\nAny ideas how to solve this?\n",
+      "author": "Kevin",
+      "currentDate": "2/24/2023",
+      "id": 2
+    },
+    {
+      "title": "How to centre a div in bootstrap 5?",
+      "body": "I couldn't find a straightforward way to centre a div in Bootstrap 5. Maybe I am missing something obvious. Google took me to the flex doc. In Bootstrap 4, I could do it by setting col-sm-* and using col-sm-offset-*\n\nNote: I don't want to centre the content in the div. Just need to put whole div in the centre (horizontally). Is setting a margin the only way?",
+      "author": "Tommy",
+      "currentDate": "2/24/2023",
+      "id": 3
+    },
+    {
+      "title": "How to Use a Multiline Text Area in ReactJS",
+      "body": "I'm trying to create multi-line text input field with ReactJS. I've created this component:\n\nvar TextInput = React.createClass({\n  getInitialState: function(){\n    return {currentValue: this.props.children}\n  },\n\n  handleChange: function(event){\n  //handler\n  },\n\n  render: function(){\n    return (\n        <textarea name=\"body\"\n                  onChange={this.handleChange}\n                  value={this.state.currentValue}/>\n    )\n  }\n});\n\nI'm rendering it this way:\n\n# jinja2 template\nReact.render(\n  <TextInput>{{ post.body }}</TextInput>,                  \n  document.getElementById('post-editing')\n);\n\nThe problem: If {{ post.body }} is something like #Title \\n text, the textarea show it in one line. I am seeing #Title text in my textarea without line breaks. What is the right way to set <textarea> value with ReactJS?\n",
+      "author": "Stephanie",
+      "currentDate": "2/26/2023",
+      "id": 4
+    },
+    {
+      "title": "Change to a relative color on hover in modern CSS",
+      "body": "I want react to hovering on a link:\n\n/* mouse over link */\na:hover {\n    text-decoration: none ;\n    border-bottom: 1px dotted ;\n}\n\n…to alter slightly the background color around the text. Rather than specify a certain color, I want to just lighten or darken whatever the inherited color as currently set. For hover and active on a link, I want the background color to change, to give something of the effect of a button being pressed.\n\nI want to be able to alter the background color of the text or page without having to alter the specific color in the a:hover rule too.\n",
+      "author": "Karen246",
+      "currentDate": "2/26/2023",
+      "id": 5
+    },
+    {
+      "title": "How do I change link style in CSS?",
+      "body": "I know this sounds like an obvious question and answer, but I have spent a long time trying to figure this out, and for some reason, none of the answers are not working for me. Honestly, this is probably going to be a simple obvious answer I just can't catch. But here's the problem: I am making a website out of HTML5, CSS, and some PHP.\n\nThe issue is, that my links appear blue and purple with an underline. I know this is how they are supposed to look, but I have tried many different ways to re-style the links with text-decoration: none, and different colors and so on.",
+      "author": "KIKI1994",
+      "currentDate": "2/26/2023",
+      "id": 6
+    },
+    {
+      "title": "Does will-change CSS property need to be applied also while the element is changing?",
+      "body": "I'm trying to make use of the CSS will-change property instead of the translateZ(0) hack.\n\nI understand that the property needs to be applied before the element changes. But my doubt is if it needs to be applied also while it is changing.\n\nI'm interested in knowing if the property needs to be applied before and while the element is transitioning or only before.\n",
+      "author": "Peter Wong",
+      "currentDate": "2/27/2023",
+      "id": 7
+    },
+    {
+      "title": "How can I change css for elements created dynamically?",
+      "body": "I have a jquery script that generates items dynamically on the scroll. By default, the overlay style for these items is set as visibility: hidden I decided to change the overlay style on the fly a checkbox, and make them visible:\n\n $(' #switch').click(function() {\n        if ($(this).prop(\"checked\") == true) {          \n\n\n            $('.footer-inner').css({ visibility: 'visible' });\n\n        } else if ($(this).prop(\"checked\") == false) {\n\n            $('.footer-inner').css('visibility', 'hidden');\n\n        }\n    });\n\nThe code trigger well for all the items already created on the page. But if I scroll down, the news items don't have the overlay is not visible.\n",
+      "author": "carmen_2005",
+      "currentDate": "2/27/2023",
+      "id": 8
+    }
+  ]
+}
