@@ -75,7 +75,9 @@ function Register() {
         </div>
 
         <div>
-          <button type="submit">Register</button>
+          <button type="submit" className="btn btn-success">
+            Register
+          </button>
         </div>
 
         <p>Have already an account?</p>
