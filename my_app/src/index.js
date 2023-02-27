@@ -9,6 +9,9 @@ import Register from "./Components/Register";
 
 import NavScrollExample from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Post from "./Post/src/Post";
+import Create from "./Post/src/Create";
+import PostDetails from "./Post/src/PostDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +24,10 @@ root.render(
         <Route path="/games" element={<Games />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        {/* post */}
+        <Route path="/post" element={<Post />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/posts/:id" element={<PostDetails />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

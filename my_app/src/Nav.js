@@ -67,7 +67,9 @@ function NavScrollExample() {
             </Nav.Link>
             <Nav.Link
               as={Link}
+              to="/post"
               className="text-light mx-5 my-2 my-md-0 text-decoration-none navlink"
+              onClick={() => setExpanded(false)}
             >
               Posts
             </Nav.Link>
