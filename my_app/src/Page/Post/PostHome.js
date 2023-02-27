@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BlogList from "./PostList";
 import useFetch from "./useFetch";
 
@@ -11,7 +12,7 @@ const PostHome = () => {
 
   return (
     <div className="home">
-      <a href="./create">Create New Post</a>
+      <Link to="./create">Create New Post</Link>
       <hr />
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}

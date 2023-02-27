@@ -1,5 +1,5 @@
 import PostHome from "./PostHome";
-import "./Postpage.css";
+import "./Post.css";
 
 const Postpage = () => {
   return (
