@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import "../Login.css";
 
 function Login() {
   const [input, setInput] = useState({
@@ -7,8 +10,7 @@ function Login() {
     password: "",
   });
 
-  const handleLogin = (e) => {
-    e.prevenDefault();
+  const handleLogin = () => {
     const loggeduser = JSON.parse(localStorage.getItem("user"));
     if (
       input.email === loggeduser.email &&
@@ -21,50 +23,54 @@ function Login() {
     }
   };
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div className="form-outline mb-4">
-          <input
-            name="email"
-            value={input.email}
-            onChange={(e) =>
-              setInput({ ...input, [e.target.name]: e.target.value })
-            }
-            type="email"
-            id="form3Example3cg"
-            className="form-control form-control-lg"
-          />
-          <label className="form-lable" htmlFor="form3Example3cg">
-            Your Email
-          </label>
-        </div>
-
-        <div className="form-outline mb-4">
-          <input
-            name="password"
-            value={input.password}
-            onChange={(e) =>
-              setInput({ ...input, [e.target.name]: e.target.value })
-            }
-            type="password"
-            id="form3Example4cg"
-            className="form-control form-control-lg"
-          />
-          <label className="form-lable" htmlFor="form3Example4cg">
-            Password
-          </label>
-        </div>
-
-        <div>
-          <button type="submit">Login</button>
-        </div>
-
-        <p>No account?</p>
-        <a href="/Register">
-          <u>Register here</u>
-        </a>
-      </form>
+    <div className="container-fluid text-start green logincontainer">
+      <h1 className="d4d4 fw-bold about-title text-center mt-5 py-5 display-5 ">
+        {"< LogIn />"}
+      </h1>
+      <div className="container" style={{ maxWidth: "500px" }}>
+        <Form onSubmit={handleLogin} style={{ maxWidth: "100%" }}>
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label className="green fw-bold">Your Email </Form.Label>
+            <Form.Control
+              type="email"
+              name="email"
+              className="rounded-0 name"
+              style={{ background: "#d4d4d4" }}
+              value={input.email}
+              onChange={(e) =>
+                setInput({ ...input, [e.target.name]: e.target.value })
+              }
+              required
+            />
+          </Form.Group>
+          <Form.Group className="my-5" controlId="password">
+            <Form.Label className="green fw-bold">Password </Form.Label>
+            <Form.Control
+              type="password"
+              name="password"
+              className="rounded-0 name"
+              style={{ background: "#d4d4d4" }}
+              value={input.password}
+              onChange={(e) =>
+                setInput({ ...input, [e.target.name]: e.target.value })
+              }
+              required
+            />
+          </Form.Group>
+          <Button type="submit" id="contactbtn" className="py-2 px-5">
+            Login
+          </Button>
+          <p className="mt-5 text-center">
+            No account?{" "}
+            <Link
+              to="/Register"
+              className="d4d4 register_link ms-2 fw-bold text-decoration-none"
+            >
+              Register here
+            </Link>
+          </p>
+        </Form>
+      </div>
     </div>
   );
 }

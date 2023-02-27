@@ -46,7 +46,7 @@ function About() {
           />
           <p className="mt-3 fs-3 d4d4">⮤ Kevin Tsui</p>
         </div>
-        <div className="col-12 col-md-6 d-flex align-items-center d4d4 px-3 px-md-5 fs-5 text-center">
+        <div className="col-12 col-md-6 align-self-center d4d4 px-3 px-md-5 fs-5 text-center">
           <p className="p-4" style={{ border: "#04b616 dashed 2px" }}>
             You should be a little cautious of a mono version 1 "column back"
             sleeve. You have to be extremely cautious if it's a stereo copy.
@@ -55,7 +55,7 @@ function About() {
       </div>
 
       <div className="row">
-        <div className="col-12 col-md-6 d-flex align-items-center d4d4 px-3 px-md-5 fs-5 order-2 order-md-1 text-center">
+        <div className="col-12 col-md-6 align-self-center d4d4 px-3 px-md-5 fs-5 order-2 order-md-1 text-center">
           <p className="p-4" style={{ border: "#04b616 dashed 2px" }}>
             You should be a little cautious of a mono version 1 "column back"
             sleeve. You have to be extremely cautious if it's a stereo copy -
@@ -95,7 +95,7 @@ function About() {
           />
           <p className="mt-3 fs-3 d4d4">⮤ Stephanie Yiu</p>
         </div>
-        <div className="col-12 col-md-6 d-flex align-items-center d4d4 px-3 px-md-5 fs-5 text-center">
+        <div className="col-12 col-md-6 align-self-center d4d4 px-3 px-md-5 fs-5 text-center">
           <p className="p-4" style={{ border: "#04b616 dashed 2px" }}>
             You should be a little cautious of a mono version 1 "column back"
             sleeve. You have to be extremely cautious if it's a stereo copy -

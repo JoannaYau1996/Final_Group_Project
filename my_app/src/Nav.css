@@ -21,7 +21,7 @@
   background-color: #000000;
   color: #04b616;
   border: #04b616 solid 2px;
-  border-radius: 1px;
+  border-radius: 0px;
   transition: all 0.7s ease;
   box-shadow: 0 0 5px #8dff7e94;
 }
@@ -44,4 +44,30 @@
 
 .navbar-collapse {
   background-color: #000;
+}
+
+.navlink {
+  position: relative;
+  padding: 0;
+}
+
+.navlink::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(81, 217, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(81, 217, 0, 1) 0%,
+    rgba(0, 255, 218, 1) 100%
+  );
+  transition: width 0.25s ease;
+  border-radius: 50% 90% 90% 90% / 90% 90% 90% 90%;
+}
+
+.navlink:hover::before {
+  width: 45%;
 }

@@ -60,21 +60,21 @@ function NavScrollExample() {
             <Nav.Link
               as={Link}
               to="/"
-              className="text-light mx-5 my-2 my-md-0 text-decoration-none "
+              className="text-light mx-5 my-2 my-md-0 text-decoration-none navlink"
               onClick={() => setExpanded(false)}
             >
               Home
             </Nav.Link>
             <Nav.Link
               as={Link}
-              className="text-light mx-5 my-2 my-md-0 text-decoration-none"
+              className="text-light mx-5 my-2 my-md-0 text-decoration-none navlink"
             >
               Posts
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="./games"
-              className="text-light mx-5 my-2 my-md-0 text-decoration-none"
+              className="text-light mx-5 my-2 my-md-0 text-decoration-none navlink"
               onClick={() => setExpanded(false)}
             >
               Games
@@ -82,7 +82,7 @@ function NavScrollExample() {
             <Nav.Link
               as={Link}
               to="./about"
-              className="text-light mx-5 my-2 my-md-0 text-decoration-none"
+              className="text-light mx-5 my-2 my-md-0 text-decoration-none navlink"
               onClick={() => setExpanded(false)}
             >
               About
