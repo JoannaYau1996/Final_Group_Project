@@ -18,12 +18,17 @@ function Register() {
   };
 
   return (
-    <>
+    <div className="container-fluid text-center w-50">
       <h2>Create an account</h2>
 
       <form onSubmit={handleSubmitRegister}>
         <div className="form-outline mb-4">
+          <label className="form-lable " htmlFor="form3Example1cg">
+            Your Name
+          </label>
           <input
+            required
+            minlength="3"
             name="name"
             value={input.name}
             onChange={(e) =>
@@ -31,15 +36,15 @@ function Register() {
             }
             type="text"
             id="form3Example1cg"
-            className="form-control form-control-lg"
+            className="form-control form-control-lg "
           />
-          <label className="form-lable" htmlFor="form3Example1cg">
-            Your Name
-          </label>
         </div>
-
         <div className="form-outline mb-4">
+          <label className="form-lable" htmlFor="form3Example3cg">
+            Your Email
+          </label>
           <input
+            required
             name="email"
             value={input.email}
             onChange={(e) =>
@@ -47,15 +52,17 @@ function Register() {
             }
             type="email"
             id="form3Example3cg"
-            className="form-control form-control-lg"
+            className="form-control form-control-lg "
           />
-          <label className="form-lable" htmlFor="form3Example3cg">
-            Your Email
-          </label>
         </div>
 
         <div className="form-outline mb-4">
+          <label className="form-lable" htmlFor="form3Example4cg">
+            Password
+          </label>
           <input
+            required
+            minlength="4"
             name="password"
             value={input.password}
             onChange={(e) =>
@@ -65,9 +72,6 @@ function Register() {
             id="form3Example4cg"
             className="form-control form-control-lg"
           />
-          <label className="form-lable" htmlFor="form3Example4cg">
-            Password
-          </label>
         </div>
 
         <div>
@@ -79,7 +83,7 @@ function Register() {
           <u>Login here</u>
         </a>
       </form>
-    </>
+    </div>
   );
 }
 
